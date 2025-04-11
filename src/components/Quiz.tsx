@@ -8,7 +8,7 @@ const quizCore = new QuizCore(); // Quiz логик менежерийг нэг 
 const Quiz: React.FC = () => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isQuizFinished, setIsQuizFinished] = useState(false);
-  const [_, forceUpdate] = useState({}); // Trick to force re-render
+  const [, forceUpdate] = useState({}); // Trick to force re-render
 
   const currentQuestion: QuizQuestion | null = quizCore.getCurrentQuestion();
 
